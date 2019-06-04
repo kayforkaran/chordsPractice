@@ -5,7 +5,7 @@ string chordVariation[] = {"Flat", "Sharp"};
 string chordInversion[] = {"First", "Second"};
 string includePrompt = "Do you want to include ";
 string choicePrompt = "?(y/n)";
-void getChoice(string, bool);
+void getChoice(string, bool&);
 bool isIncluded(char choice, string choiceFor, bool &choiceStore){
 	if(choice == 'y' || choice == 'Y')
         {
