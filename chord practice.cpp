@@ -8,9 +8,15 @@ string choicePrompt = "?(y/n)";
 void getChoice(string, bool);
 bool isIncluded(char choice, string choiceFor, bool &choiceStore){
 	if(choice == 'y' || choice == 'Y')
+        {
+                choiceStore = true;
 		return true;
+        }
 	else if(choice == 'n' || choice == 'N')
+        {
+                choiceStore = false;
 		return false;
+        }
 	cout<<"Please enter valid character."<<endl;
 	getChoice(choiceFor, choiceStore);
 }
